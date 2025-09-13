@@ -1,0 +1,71 @@
+account_file: "account.json" # file chứa thông tin login
+
+# cấu hình login bằng qrcode
+login_qrcode: true # tự động chuyển sang qrcode login khi cookie không thể login
+qrcode_path: "qr.png" # ảnh qrcode
+save_cookie: true # tư động lưu lại cookie sau khi đăng nhập bắng qrcode xong
+
+# cấu hình bot
+prefix: "/"
+name_bot: "Bi & Bon"
+# sử dụng lệnh /id để lấy id
+# chú ý: mỗi acc chạy bot get info sẽ ra 1 id khác nhau nên nếu đổi acc chạy bot phải đổi id (do zalỏ lưu data ở local)
+# Danh sách admin (có thể sử dụng nhiều ID)
+admin_bot:
+  - "2574948692146319844"
+  - "339552007755831331"
+  - "764450365581940909"
+  - "2"
+  - "bot_self"
+  - "8923496586113246432"
+  - "5600955156958461580"
+  - "560365709478365424"
+  - "764450365581940909"
+  - "6542349645209852157"
+  - "8625698224746171010"
+  - "3690812264116437518"
+  - "7105476252150837421"
+  - "356717369537975971"
+  - "7850677954047950499"
+  - "8372235619211732320"
+
+# Danh sách chủ nhân (ưu tiên cao nhất). Có thể là 1 hoặc nhiều ID
+owner_bot:
+  - "764450365581940909"
+  - "7626056543232390627"
+  - "8923496586113246432"
+  - "5600955156958461580"
+  - "6310961995589127075"
+  - "420203792419625186"
+support_bot:
+  - "1"
+  - "2"
+allow_private_command: true # có cho bot nhận lệnh từ tin nhắn riêng hay không
+default_money: 0 # tiền mặc định của user khi khởi tạo database
+
+# Map xưng hô theo ID (ưu tiên cao nhất)
+honorific_map:
+  "6310961995589127075": "vợ iuu"
+
+# cấu hình của zca-js
+zca_js_config:
+  selfListen: true
+  checkUpdate: true
+  logging: true
+
+# Cấu hình tìm ảnh Google (tùy chọn, ít nhất một trong hai)
+# 1) SerpAPI
+serpapi_key: "" # Nhập API key SerpAPI tại đây (để trống nếu không dùng)
+
+# 2) Google Custom Search Engine (CSE)
+google_cse:
+  api_key: "AIzaSyBA_X0MLOAuRi-1_90C4uk-fF0-mxM-0Lw" # Nhập API key Google
+  cx: "e0029f17b18774ea3"      # Nhập Search Engine ID (cx)
+
+# Cấu hình OpenAI (ChatGPT)
+openai_key: "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"
+
+# Cấu hình Gemini API (có thể điền nhiều key để tự động xoay vòng khi bị rate limit)
+# Tuỳ chọn khác: đặt biến môi trường GEMINI_API_KEYS="key1,key2,..." nếu không muốn lưu trong file
+gemini_api_keys:
+  - "AIzaSyC8eNsAZq56EMpARpACDHg4s1nFyWk41t8"  # Dán API key Gemini vào đây (ví dụ: AIza...)
